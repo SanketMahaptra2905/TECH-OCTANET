@@ -1,1 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Advanced Neon Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <div class="app-container">
+        <h1>Neon Task Manager</h1>
+
+        <!-- Theme Toggle -->
+        <div class="theme-switch">
+            <input type="checkbox" id="theme-toggle">
+            <label for="theme-toggle">Toggle Dark Mode</label>
+        </div>
+
+        <!-- Task Input Section -->
+        <div class="task-input-container">
+            <input type="text" id="task-input" placeholder="Enter your task...">
+            <input type="date" id="task-date">
+            <select id="task-priority">
+                <option value="low">Low Priority</option>
+                <option value="medium">Medium Priority</option>
+                <option value="high">High Priority</option>
+            </select>
+            <select id="task-category">
+                <option value="work">Work</option>
+                <option value="personal">Personal</option>
+                <option value="other">Other</option>
+            </select>
+            <button id="add-task">Add Task</button>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search tasks...">
+        </div>
+
+        <!-- Task Lists -->
+        <div class="task-lists"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
